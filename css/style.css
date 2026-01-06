@@ -1,29 +1,114 @@
-body{
-    
-}
-
-
-
+/* FOOTER  */
 
 .footer {
     background-color: #6f4e37;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 20px 10px;
-    margin-top: 30px;
+    position: relative;
 }
 
-.footer h3 {
-    margin-bottom: 5px;
+.footer h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
 .footer p {
-    margin: 4px 0;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.footer-copy {
-    margin-top: 10px;
+/*  SOBRE  */
+
+#about {
+    margin-bottom: 30px;
+}
+
+/* WHATSAPP BUTTON  */
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.btn-whatsapp img {
+    width: 60px;
+    transition: transform 0.3s;
+}
+
+.btn-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    right: 70px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
     font-size: 12px;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+}
+
+/*  MAPA */
+
+.footer iframe {
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* REDES SOCIAIS */
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.footer-icons a {
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-icons a:hover {
+    transform: scale(1.2);
+    color: #f5d7b5;
+}
+
+/* ===== LOGO ===== */
+
+.footer img[alt*="Logo"] {
+    width: 120px;
+    margin: 15px 0;
+}
+
+/* COPYRIGHT  */
+
+.footer p:last-child {
+    font-size: 13px;
     opacity: 0.8;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .btn-whatsapp img {
+        width: 50px;
+    }
+
+    .footer iframe {
+        height: 250px;
+    }
 }
