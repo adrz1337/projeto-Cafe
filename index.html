@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cafeteria Caucaia</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
-        <p>teste</p>
-        <p>teste 2 rock</p>
-    </div>
-    <div class="teste20">
-        <p> TESTEANDO BRANCH</p>
-        <img src="" alt="">
-    </div>
+    <body>
+        <header>
+            <h1>☕ Cafeteria Aroma</h1>
+            <p>O melhor café da Cauacai</p>
+        </header>
+        
+        <main>
+            <section class="cardapio">
+                <h2>cardapio</h2>
 
-    <header>
-        <div class="logo">
-            <h1> falante </h1>
-        </div>
-        <div class="topico"></div>
-        <div class="modura "></div>
-    </header>
-</body> 
+                <div class="item">
+                    <span>Café Expresso</span>
+                    <button onclick="adicionar('Café Expresso')">Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <span>Cappuccino</span>
+                    <button onclick="adicionar('Cappuccino')">Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <span>Chocolate Quente</span>
+                    <button onclick="adicionar('Chocolate Quente')">Adicionar</button>
+                </div>
+            </section>
+
+            <section class="pedido">
+                <h2>Seu Pedido</h2>
+                <ul id="lista"></ul>
+            </section>
+        </main>
+        <footer></footer>
+    <script src="js/script.js"></script>
+    </body> 
 </html>
