@@ -22,12 +22,6 @@ body{
     margin-bottom: 10px;
 }
 
-/*  SOBRE  */
-
-#about {
-    margin-bottom: 30px;
-}
-
 /* WHATSAPP BUTTON  */
 
 .btn-whatsapp {
@@ -39,8 +33,49 @@ body{
 
 .btn-whatsapp img {
     width: 60px;
-    transition: transform 0.3s;
+    animation: puloGiro 2.5s infinite ease-in-out;
+    transform-origin: center;
 }
+
+@keyframes puloGiro {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    /* PULO 1 */
+    10% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    20% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    /* PULO 2 */
+    30% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    40% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    /* PULO 3 */
+    50% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    60% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    /* GIRO */
+    80% {
+        transform: translateY(0) rotate(360deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
 
 .btn-whatsapp img:hover {
     transform: scale(1.1);
@@ -100,16 +135,14 @@ body{
 /* COPYRIGHT  */
 
 .footer p:last-child {
-    font-size: 26px;
+    font-size: 15px;
     opacity: 0.8;
     margin-top: 15px;
 }
 
 .services h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    position: relative;
+    top: 10px;
 }
 
 .location-icon {
