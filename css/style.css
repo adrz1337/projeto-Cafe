@@ -42,7 +42,6 @@ body{
         transform: translateY(0) rotate(0deg);
     }
 
-    /* PULO 1 */
     10% {
         transform: translateY(-10px) rotate(0deg);
     }
@@ -50,7 +49,6 @@ body{
         transform: translateY(0) rotate(0deg);
     }
 
-    /* PULO 2 */
     30% {
         transform: translateY(-10px) rotate(0deg);
     }
@@ -58,7 +56,6 @@ body{
         transform: translateY(0) rotate(0deg);
     }
 
-    /* PULO 3 */
     50% {
         transform: translateY(-10px) rotate(0deg);
     }
@@ -66,7 +63,6 @@ body{
         transform: translateY(0) rotate(0deg);
     }
 
-    /* GIRO */
     80% {
         transform: translateY(0) rotate(360deg);
     }
@@ -75,7 +71,6 @@ body{
         transform: translateY(0) rotate(360deg);
     }
 }
-
 
 .btn-whatsapp img:hover {
     transform: scale(1.1);
@@ -175,4 +170,80 @@ body{
     .footer iframe {
         height: 250px;
     }
+}
+
+/* MENU */
+.menu {
+    background-color: #6f4e37;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* CARDÁPIO */
+.cardapio {
+    padding: 60px 20px;
+    background-color: #f3eee9;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #4e342e;
+}
+
+/* CONTAINER DOS ITENS */
+.cardapio-itens {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.item {
+    background-color: #fff;
+    width: 220px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* IMAGEM */
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* TÍTULO */
+.item h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #6f4e37;
+}
+
+/* PREÇO */
+.item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e2e2e;
 }
